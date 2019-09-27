@@ -11,7 +11,7 @@ theme = "airspace-hugo"
 
   [params.slider]
     enable = true
-    title = "NIAM 2020 &amp; NavIgated and Automated Machine learning"
+    title = "NIAM 2020 - NavIgated and Automated Machine learning"
     subtitle = "Warsaw, April 2020 <br/> Short motto of the workshop"
     bgImage = "img/slider-bg.jpg"
 
