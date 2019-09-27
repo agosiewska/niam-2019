@@ -1,5 +1,5 @@
-title = "Airspace for Hugo"
-baseURL = "https://examplesite.com"
+title = "NIAM 2020"
+baseURL = "https://quirky-haibt-7710fe.netlify.com/"
 languageCode = "en-us"
 theme = "airspace-hugo"
 
@@ -11,14 +11,14 @@ theme = "airspace-hugo"
 
   [params.slider]
     enable = true
-    title = "NIAM 2019 &amp; NavIgated and Automated Machine learning"
+    title = "NIAM 2020 &amp; NavIgated and Automated Machine learning"
     subtitle = "Warsaw, April 2020 <br/> Short motto of the workshop"
     bgImage = "img/slider-bg.jpg"
 
   [params.wrapper]
     enable = true
     image = "img/wrapper-img.png"
-    title = "About NIAM 2019 Workshop"
+    title = "About NIAM 2020 Workshop"
     italic = "Warsaw, April 2020"
     paragraph = "The aim of the workshop is to integrate scientific communities interested in Navigated and Automated ML."
 
