@@ -12,7 +12,7 @@
 
     <div class="row">
       {{ if .Site.Data.testimonial.number.enable }}
-      <div class="col-md-6">
+      <div class="col-md-12">
         <div class="block">
           <!-- Content -->
           <ul class="counter-box clearfix">
@@ -26,24 +26,6 @@
             </li>
             {{ end }}
           </ul>
-        </div>
-      </div>
-      {{ end }}
-      {{ if .Site.Data.testimonial.peoples.enable }}
-      <div class="col-md-6">
-        <div class="testimonial-carousel">
-          <div id="testimonial-slider" class="owl-carousel">
-            {{ range .Site.Data.testimonial.people }}
-            <div>
-                <img src="{{.quoteImg | absURL }}" alt="IMG">
-                <p>"{{ .text }}"</p>
-                <div class="user">
-                  <img src="{{ $.Site.BaseURL }}{{ .image }}" alt="Pepole">
-                  <p><span>{{ .name }}</span> {{ .role }}</p>
-                </div>
-            </div>
-            {{ end }}
-          </div>
         </div>
       </div>
       {{ end }}
