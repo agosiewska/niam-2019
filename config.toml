@@ -13,7 +13,7 @@ publishDir = "docs"
 
   [params.slider]
     enable = true
-    title = "NIAM 2020 - NavIgated and Automated Machine learning"
+    title = "NIAM 2020 - Navigated, Interpretable, and Automated Machine learning"
     subtitle = "Warsaw, April 2020 <br/> Short motto of the workshop"
     bgImage = "img/slider-bg.jpg"
 
@@ -22,7 +22,7 @@ publishDir = "docs"
     image = "img/wrapper-img.png"
     title = "About NIAM 2020 Workshop"
     italic = "Warsaw, April 2020"
-    paragraph = "The aim of the workshop is to integrate scientific communities interested in Navigated and Automated ML."
+    paragraph = "The aim of the workshop is to integrate scientific communities interested in Navigated, Interpretable, and Automated ML."
 
 
   [params.feature]
