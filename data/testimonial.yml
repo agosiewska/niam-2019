@@ -6,14 +6,11 @@ paragraph: >
 number:
   enable : true
 numbers:
-  - icon: ion-ios-chatboxes-outline
-    counter: 5
+  - counter: 5
     text: Poster sessions
-  - icon: ion-ios-glasses-outline
-    counter: 20
+  - counter: 20
     text: Flash talks
-  - icon: ion-ios-compose-outline
-    counter: 2
+  - counter: 2
     text: Days
 
 
