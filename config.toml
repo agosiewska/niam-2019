@@ -3,6 +3,8 @@ baseURL = "https://quirky-haibt-7710fe.netlify.com/"
 languageCode = "en-us"
 theme = "airspace-hugo"
 
+publishDir = "docs"
+
 # The site's parameters
 [params]
   home = "Home"
