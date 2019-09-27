@@ -1,277 +1,307 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
-  <meta charset="utf-8">
-  <title>Dot</title>
+<html>
+<head>
+	
+	<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta name="generator" content="Hugo 0.55.6" />
 
-  <!-- mobile responsive meta -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  
-  <!-- ** Plugins Needed for the Project ** -->
-  <!-- Bootstrap -->
-  <link rel="stylesheet" href="/plugins/bootstrap/bootstrap.min.css">
-  <!-- themefy-icon -->
-  <link rel="stylesheet" href="/plugins/themify-icons/themify-icons.css">
-  <!-- highlight -->
-  <link rel="stylesheet" href="/plugins/highlight/hybrid.css">
-  <!-- fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
 
-  <style>
-  :root{
-    --primary-color:#02007e;
-    --secondary-color:#f9f9f9;
-    --text-color:#636363;
-    --text-color-dark:#242738;
-    --white-color:#ffffff;
-  }  
-  </style>
 
+
+
+
+
+
+
+<title>Airspace for Hugo</title>
+
+<meta name="generator" content="Hugo 0.55.6" />
+<link rel="stylesheet" href="/css/owl.carousel.css" />
+<link rel="stylesheet" href="/css/bootstrap.min.css" />
+<link rel="stylesheet" href="/css/font-awesome.min.css" />
+<link rel="stylesheet" href="/css/ionicons.min.css" />
+<link rel="stylesheet" href="/css/animate.css" />
+<link rel="stylesheet" href="/css/syntax.css" />
+<link rel="stylesheet" href="/css/venobox.css" />
 <!-- Main Stylesheet -->
+<link rel="stylesheet" href="/css/style.css" />
 
-<link rel="stylesheet" href="/css/style.min.css" integrity="" media="screen">
 
-<!-- jquiry -->
-<script src="/plugins/jquery/jquery-1.12.4.js"></script>
 
-<!-- jquary ui -->
-<script src="/plugins/jquery/jquery-ui.js"></script>
+<script src="/js/jquery-1.10.2.min.js"></script>
+<script async src="/js/bootstrap.min.js"></script>
+<script async src="/js/owl.carousel.min.js"></script>
+<script async src="/js/plugins.js"></script>
+<script async src="/js/venobox.min.js"></script>
+<script async src="/js/main.js"></script>
 
-<!--Favicon-->
-<link rel="icon" href="/images/favicon.png" type="image/x-icon">
+
+
 
 </head>
 <body>
-  
-  <!-- header -->
-  <header class="hero-section overlay bg-cover banner" data-background="/images/banner.jpg">
-    <div class="container mb-100">
-      <!-- navigation -->
-      <nav class="navbar navbar-expand-lg navbar-light">
-  <a class="navbar-brand" href="/en">Dot</a>
-  <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation"
-    aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
 
-  <div class="collapse navbar-collapse text-center" id="navigation">
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item">
-        <a class="nav-link text-dark" href="/en">Home</a>
-      </li>
-      
-      
-      <li class="nav-item">
-        <a class="nav-link text-dark" href="/faq">Faq</a>
-      </li>
-      
-      
-      
-      <li class="nav-item">
-        <a class="nav-link text-dark" href="/contact">contact</a>
-      </li>
-      
-      
-      
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
-          aria-expanded="false">
-          pages
-        </a>
-        <div class="dropdown-menu" >
-          
-          <a class="dropdown-item" href="/installation">Installation</a>
-          
-          <a class="dropdown-item" href="/billing-pricing">Billing and Pricing</a>
-          
-          <a class="dropdown-item" href="/features">Features</a>
-          
-        </div>
-      </li>
-      
-      
-    </ul>
-    
-    <select id="select-language" onchange="location = this.value;">
-      
-      
-      
-      
-      
-      
-      
-      
-      <option id="en" value="/" selected>En
-      </option>
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      <option id="fr" value="/fr/">Fr</option>
-      
-      
-      
-      
-    </select>
-  </div>
-</nav>
-      <!-- /navigation -->
-    </div>
-    <!-- banner -->
-<div class="container">
+	
+<header>
+  <div class="container">
     <div class="row">
-    <div class="col-lg-8 text-center mx-auto">
-    <h1 class="text-white mb-3">Support Center &amp; Knowledge base</h1>
-    <p class="text-white mb-4">Find advice and answers from our support team fast or get in touch</p>
-        <div class="position-relative">
-        <input id="search" class="form-control" placeholder="Have a question? Just ask here or enter terms">
+      <div class="col-md-12">
         
-        <script>
-            $(function() {
-            var projects = [
-                
-                {
-                    value: "Hello R Markdown",
-                    label: "Hello R Markdown",
-                    url:"\/post\/2015-07-23-r-rmarkdown\/"
-                },
-                
-            ];
-            $( "#search" ).autocomplete({
-                minLength: 0,
-                source: projects,
-                focus: function( event, ui ) {
-                    $( "#search" ).val( ui.item.label );
-                    return false;
-                },
-                select: function( event, ui ) {
-                    $( "#search" ).val( ui.item.label );
-                    $( "#project-id" ).val( ui.item.value );
-                    return false;
-                }
-            })
-            .data( "ui-autocomplete" )._renderItem = function( ul, item ) {
-                return $( "<li>" )
-                .append( "<a href=" + item.url + " + \" &quot;\" +  >" + item.label + "</a>" )
-                .appendTo( ul );
-            };
-            });
-        </script>
-        </div>
-    </div>
-    </div>
-</div>
-<!-- /banner -->
-  </header>
-  <!-- /header -->
-  
-  <div id="content">
+        <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="/">
+                <img src="/img/logo.png" alt="Airspace for Hugo Logo">
+              </a>
+            </div>
+            
 
-  <!-- topics -->
-  <section class="section bg-gray">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-12 text-center">
-           <h2 class="section-title">Find your answer by subject</h2> 
-        </div>
-        <!-- topic-item -->
-        
-        <div class="col-lg-4 col-sm-6 mb-4">
-          <a href="/installation/" class="px-4 py-5 bg-white shadow text-center d-block match-height">
-            <i class="ti-panel icon text-primary d-block mb-4"></i>
-            <h3 class="mb-3 mt-0">Installation</h3>
-            <p class="mb-0">Lorem ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet</p>
-          </a>
-        </div>
-        
-        <div class="col-lg-4 col-sm-6 mb-4">
-          <a href="/billing-pricing/" class="px-4 py-5 bg-white shadow text-center d-block match-height">
-            <i class="ti-credit-card icon text-primary d-block mb-4"></i>
-            <h3 class="mb-3 mt-0">Billing &amp; Pricing</h3>
-            <p class="mb-0">Lorem ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet</p>
-          </a>
-        </div>
-        
-        <div class="col-lg-4 col-sm-6 mb-4">
-          <a href="/features/" class="px-4 py-5 bg-white shadow text-center d-block match-height">
-            <i class="ti-package icon text-primary d-block mb-4"></i>
-            <h3 class="mb-3 mt-0">Features</h3>
-            <p class="mb-0">Lorem ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet</p>
-          </a>
-        </div>
-        
+            
+            <div class="collapse navbar-collapse" id="navigation">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="/">Home</a></li>
+                
+                <li><a href="/work">Work</a></li>
+                
+                <li><a href="/blog">Blog</a></li>
+                
+                <li><a href="/service">Service</a></li>
+                
+                <li><a href="/contact">Contact</a></li>
+                
+              </ul>
+            </div>
+          </div>
+        </nav>
       </div>
     </div>
-  </section>
-  <!-- /topics -->
+  </div>
+</header>
 
-  
-  <!-- call to action -->
-  <section class="bg-gray">
+	
+<!-- Slider Start -->
+<section id="slider" style="background-image: url('/img/slider-bg.jpg');">
     <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <div class="section bg-white shadow text-center">
-             <h2 class="mb-4">Didn&#39;t find an answer to your question?</h2> 
-             <p class="mb-4">Musce libero nunc, dignissim quis turpis quis, semper vehicula dolor. Suspendisse tincidunt consequat quam.</p> 
-            <a href="/contact"
-              class="btn btn-primary">contact us</a>
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <div class="block text-center">
+                    <h1 class="animated fadeInUp text-uppercase">NIAM 2019 &amp; NavIgated and Automated Machine learning</h1>
+                    <p class="animated fadeInUp">Short motto<br/>of the workshop</p>
+                    <a class="btn btn-main btn-solid-border" href="/" ></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+	
+<section id="intro">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7 col-sm-12">
+        <div class="block">
+          <div class="section-title">
+            <h2>About Us</h2>
+            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id</p>
+        </div>
+      </div>
+      <div class="col-md-5 col-sm-12">
+        <div class="block">
+         <img src=" /img/wrapper-img.png " alt="Img">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+	<section id="feature" style="background-image: url('/img/feature-bg.jpg');">
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-6">
+      <h2 class="text-uppercase">We believe in great ideas</h2>
+      <p>
+      	Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+      </p>
+      
+      	<a href="#" class="btn btn-main">View Works</a>
+      
+    </div>
+  </div>
+</div>
+</section>
+
+	
+
+
+
+	
+<section id="call-to-action" style="background-image: url('/img/call-to-action-bg.jpg');">
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <h2>We design delightful digital experiences.</h2>
+          <p>Read more about what we do and our philosophy of design. Judge for yourself The work and results we’ve achieved for other clients, and meet our highly experienced Team who just love to design.</p>
+          
+          <a class="btn btn-main btn-solid-border" href="#" >tell us your story</a>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+	
+
+<section id="testimonial">
+  <div class="container">
+    
+    <div class="row">
+      <div class="section-title text-center">
+        <h2>Fun Facts About Us</h2>
+        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics
+</p>
+      </div>
+    </div>
+
+    <div class="row">
+      
+      <div class="col-md-6">
+        <div class="block">
+          
+          <ul class="counter-box clearfix">
+            
+            <li>
+              <div class="block">
+                <i class="ion-ios-chatboxes-outline"></i>
+                <h4 class="counter" data-count="2000">0</h4>
+                <span>Cups of Coffee</span>
+              </div>
+            </li>
+            
+            <li>
+              <div class="block">
+                <i class="ion-ios-glasses-outline"></i>
+                <h4 class="counter" data-count="2000">0</h4>
+                <span>Cups of Coffee</span>
+              </div>
+            </li>
+            
+            <li>
+              <div class="block">
+                <i class="ion-ios-compose-outline"></i>
+                <h4 class="counter" data-count="2000">0</h4>
+                <span>Cups of Coffee</span>
+              </div>
+            </li>
+            
+            <li>
+              <div class="block">
+                <i class="ion-ios-timer-outline"></i>
+                <h4 class="counter" data-count="2000">0</h4>
+                <span>Cups of Coffee</span>
+              </div>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+      
+      
+      <div class="col-md-6">
+        <div class="testimonial-carousel">
+          <div id="testimonial-slider" class="owl-carousel">
+            
+            <div>
+                <img src="/img/cotation.png" alt="IMG">
+                <p>"This Company created an e-commerce site with the tools to make our business a success, with innovative ideas we feel that our site has unique elements that make us stand out from the crowd.
+"</p>
+                <div class="user">
+                  <img src="/img/item-img1.jpg" alt="Pepole">
+                  <p><span>Rose Ray</span> CEO-Themefisher</p>
+                </div>
+            </div>
+            
+            <div>
+                <img src="/img/cotation.png" alt="IMG">
+                <p>"This Company created an e-commerce site with the tools to make our business a success, with innovative ideas we feel that our site has unique elements that make us stand out from the crowd.
+"</p>
+                <div class="user">
+                  <img src="/img/item-img1.jpg" alt="Pepole">
+                  <p><span>Rose Ray</span> CEO-Themefisher</p>
+                </div>
+            </div>
+            
+            <div>
+                <img src="/img/cotation.png" alt="IMG">
+                <p>"This Company created an e-commerce site with the tools to make our business a success, with innovative ideas we feel that our site has unique elements that make us stand out from the crowd.
+"</p>
+                <div class="user">
+                  <img src="/img/item-img1.jpg" alt="Pepole">
+                  <p><span>Rose Ray</span> CEO-Themefisher</p>
+                </div>
+            </div>
+            
+            <div>
+                <img src="/img/cotation.png" alt="IMG">
+                <p>"This Company created an e-commerce site with the tools to make our business a success, with innovative ideas we feel that our site has unique elements that make us stand out from the crowd.
+"</p>
+                <div class="user">
+                  <img src="/img/item-img1.jpg" alt="Pepole">
+                  <p><span>Rose Ray</span> CEO-Themefisher</p>
+                </div>
+            </div>
+            
           </div>
         </div>
       </div>
+      
     </div>
-  </section>
-  <!-- /call to action -->
-  
+  </div>
+</section>
 
 
-  </div><!-- footer -->
-<footer class="section bg-gray pb-0">
+
+	
+<footer>
   <div class="container">
     <div class="row">
-      <div class="col-md-8 text-md-left text-center">
-       <p>The Hugo Documents are copyright © <a href="https://gethugothemes.com/">gethugothemes</a> 2019.</p>
-      </div>
-      <div class="col-md-4 text-md-right text-center">
-        <ul class="list-inline mb-3">
-          
-          <li class="list-inline-item"><a class="text-color d-inline-block p-2" href="#"><i class="ti-facebook"></i></a></li>
-          
-          <li class="list-inline-item"><a class="text-color d-inline-block p-2" href="#"><i class="ti-twitter-alt"></i></a></li>
-          
-          <li class="list-inline-item"><a class="text-color d-inline-block p-2" href="#"><i class="ti-vimeo-alt"></i></a></li>
-          
-          <li class="list-inline-item"><a class="text-color d-inline-block p-2" href="#"><i class="ti-instagram"></i></a></li>
-          
-        </ul>
+      <div class="col-md-12">
+        <div class="footer-manu">
+          <ul>
+            
+            <li><a href="/">About us</a></li>
+            
+            <li><a href="/contact">Contact us</a></li>
+            
+            <li><a href="/work">How it works</a></li>
+            
+            <li><a href="/blog">Blog</a></li>
+            
+            <li><a href="/">Terms</a></li>
+            
+          </ul>
+        </div>
+        <p>Copyright &copy; Design &amp; Developed by Themefisher. All rights reserved.</p>
       </div>
     </div>
   </div>
 </footer>
-<!-- /footer -->
 
-<!-- Bootstrap JS -->
-<script src="/plugins/bootstrap/bootstrap.min.js"></script>
-<!-- match-height JS -->
-<script src="/plugins/match-height/jquery.matchHeight-min.js"></script>
-<!-- highlight -->
-<script src="/plugins/highlight/highlight.pack.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
 
-<!-- Main Script -->
-
-<script src="/js/script.min.js"></script></body>
-
+</body>
 </html>
