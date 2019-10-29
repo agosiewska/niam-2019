@@ -28,8 +28,7 @@ publishDir = "docs"
     bgImage = "img/feature-bg.jpg"
     content = """06.12.2019 - Call for poster + flashtalk open \\
               06.02.2020 -  Call for poster + flashtalk deadline \\
-              
-              22-24.04.2020 -  NIAM Workshop \\"""
+              22-24.04.2020 -  NIAM Workshop"""
     [params.feature.button]
       caption = "View details (soon)"
       url = "#"
