@@ -6,7 +6,7 @@ paragraph: >
 number:
   enable : true
 numbers:
-  - counter: 3
+  - counter: 4
     text: Thematic sessions
   - counter: 30
     text: Flash talks and posters
