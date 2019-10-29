@@ -41,3 +41,16 @@ publishDir = "docs"
     [params.call.button]
       url = "#"
       text = "Register"
+
+  [params.wrapper2]
+    enable = true
+    title = "Organizators"
+    organizer1 = "Przemysław Biecek"
+    image1 = "img/przemek.png"
+    organizer2 = "Alicja Gosiewska"
+    image2 = "img/alicja.png"
+    organizer3 = "Anna Kozak"
+    image3 = "img/ania.png"
+    
+    
+    
