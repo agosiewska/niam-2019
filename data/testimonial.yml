@@ -6,11 +6,11 @@ paragraph: >
 number:
   enable : true
 numbers:
-  - counter: 5
-    text: Poster sessions
-  - counter: 20
-    text: Flash talks
-  - counter: 2
+  - counter: 3
+    text: Thematic sessions
+  - counter: 30
+    text: Flash talks and posters
+  - counter: 3
     text: Days
 
 
