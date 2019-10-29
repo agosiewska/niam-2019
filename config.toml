@@ -14,7 +14,7 @@ publishDir = "docs"
   [params.slider]
     enable = true
     title = "NIAM 2020 - Navigated, Interpretable, and Automated Machine learning"
-    subtitle = "Warsaw, 22-24 April 2020"
+    subtitle = "Warsaw, April 2020 <br/> Short motto of the workshop"
     bgImage = "img/slider-bg.jpg"
 
   [params.wrapper]
