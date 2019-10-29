@@ -19,7 +19,18 @@ publishDir = "docs"
     image = "img/wrapper-img.png"
     title = "About NIAM 2020 Workshop"
     italic = "Warsaw, 22-24 April 2020"
-    paragraph = """The aim of the workshop is to integrate scientific communities interested in Navigated, Interpretable, and Automated Machine Learning"""
+    paragraph = """The aim of the workshop is to integrate scientific communities interested in Navigated, Interpretable, and Automated Machine Learning. 
+    NIAM is a place for discussion and learning the most recent advances in the above areas. \\
+    The essence of the workshop are poster sessions preceded by short (3-5 min) flash talks and also small group activities and discussions.
+    To enhance networking and exchange of experience, we plan to focus this event on specific areas of ML and to keep it relatively small (around 30 participants).
+    <br />
+    <br />
+    The subject areas of NIAM include, but are not limited to: \\
+    - Navigated Machine Learning, \\
+    - Interpretable Machine, \\
+    - Automated Machine Learning, \\
+    - Automated Machine Learning, \\
+    - Evidence-Based Machine Learning. """
 
 
   [params.feature]
